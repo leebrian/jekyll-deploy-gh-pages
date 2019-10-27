@@ -8,6 +8,9 @@ git clone https://leebrian:$blog_pull_token@github.com/leebrian/prepend-blog.git
 ls -alrt
 git clone https://leebrian:$blog_pull_token@github.com/leebrian/prepend-blog.git
 ls -alrt prepend-blog
+git clone https://github.com/leebrian/prepend-blog.git
+ls -alrt
+ls -alrt prepend-blog
 echo '👍 ENTRYPOINT HAS STARTED—INSTALLING THE GEM BUNDLE'
 bundle install
 bundle list | grep "jekyll ("
