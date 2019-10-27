@@ -1,4 +1,7 @@
 #!/bin/sh
+echo 'hello world'
+pwd
+ls -alrt
 echo '👍 ENTRYPOINT HAS STARTED—INSTALLING THE GEM BUNDLE'
 bundle install > /dev/null 2>&1
 bundle list | grep "jekyll ("
