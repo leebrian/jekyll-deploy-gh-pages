@@ -11,4 +11,5 @@ bundle exec jekyll build
 echo '👍 THE SITE IS BUILT—GREAT SUCCESS'
 pwd
 ls -alrt
+ls -alrt _site
 
