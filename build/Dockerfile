@@ -14,8 +14,9 @@ LABEL "com.github.actions.color"="green"
 LABEL "repository"="formed from http://github.com/BryanSchuetz/jekyll-deploy-gh-pages/tree/master/build"
 
 # need this to ftp stuff
-RUN apk update
-RUN apk add openssh sshpass lftp
+# RUN apk update
+# RUN apk add openssh sshpass lftp
+RUN apt-get install openssh sshpass lftp
 
 ADD entrypoint.sh /entrypoint.sh
 
