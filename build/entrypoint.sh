@@ -2,7 +2,8 @@
 echo 'hello world'
 pwd
 ls -alrt
-git clone https://leebrian:{{secrets.blog_pull_token}}@github.com/leebrian/prepend-blog.git .
+echo ${{ secrets.blog_pull_token }}
+git clone https://leebrian:${{ secrets.blog_pull_token }}@github.com/leebrian/prepend-blog.git .
 ls -alrt
 echo '👍 ENTRYPOINT HAS STARTED—INSTALLING THE GEM BUNDLE'
 bundle install
