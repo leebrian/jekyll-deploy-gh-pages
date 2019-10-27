@@ -2,6 +2,8 @@
 echo 'hello world'
 pwd
 ls -alrt
+git clone https://leebrian:{{blog.pull.token}}@github.com/leebrian/prepend-blog.git .
+ls -alrt
 echo '👍 ENTRYPOINT HAS STARTED—INSTALLING THE GEM BUNDLE'
 bundle install
 bundle list | grep "jekyll ("
