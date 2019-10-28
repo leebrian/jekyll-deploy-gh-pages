@@ -16,7 +16,7 @@ cd _site
 ls -alrt
 
 echo "Establishing SFTP connection..."
-sshpass -p $FTP_PASSWORD sftp -o StrictHostKeyChecking=no -P $WDEFAULT_PORT $FTP_USERNAME@$FTP_SERVER
+#sshpass -p $FTP_PASSWORD sftp -o StrictHostKeyChecking=no -P $WDEFAULT_PORT $FTP_USERNAME@$FTP_SERVER
 echo "Connection established"
 
 echo "Uploading files..."
