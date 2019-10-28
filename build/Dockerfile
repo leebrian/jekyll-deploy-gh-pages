@@ -17,9 +17,9 @@ LABEL "repository"="formed from http://github.com/BryanSchuetz/jekyll-deploy-gh-
 # RUN apk update
 # RUN apk add openssh sshpass lftp
 RUN apt-get update
-RUN apt-get install lftp
-RUN apt-get install openssh-server
-RUN apt-get install sshpass
+RUN apt-get -y install lftp
+RUN apt-get -y install openssh-server
+RUN apt-get -y install sshpass
 #RUN apt-get install openssh sshpass lftp
 
 ADD entrypoint.sh /entrypoint.sh
